@@ -1,5 +1,6 @@
 const colors = {
   primary: '#0067B3',
+
   greyscale: {
     white: `hsl(0, 0%, 100%)`,
     grey95: `hsl(0, 0%, 95%)`,
@@ -25,7 +26,7 @@ export const customTheme = {
     fontColor: '#666666', // accordion font color theme input
   },
   button: {
-    baseColor: colors.primary, // button base color theme input
+    baseColor: 'hsl(205, 100%, 20%)', // button base color theme input
     hoverBaseColor: colors.blue[80], // button hover base color theme input
     primaryFontColor: '#ffffff', // button primary font color theme input
     primaryHoverBackgroundColor: '#0086e8',
@@ -102,7 +103,7 @@ export const customTheme = {
     checkedBaseColor: colors.primary, // switch checked base color theme input
   },
   table: {
-    baseColor: colors.primary, // table base color theme input
+    baseColor: 'hsl(205, 100%, 20%)', // table base color theme input
     fontColor: '#ffffff', // table font color theme input
   },
   tabs: {

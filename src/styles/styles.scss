@@ -31,6 +31,10 @@ body {
   color: var(--error-dark);
 }
 
+.font-secondary {
+  color: var( --grey-dark);
+}
+
 .bg-red {
   background-color: var(--error-dark);
 }
@@ -40,8 +44,20 @@ body {
   display: flex;
 }
 
+.font-bold {
+  font-weight: bold !important;
+}
+
+.w-50 {
+  width: 50%;
+}
+
 .m-0 {
   margin: 0;
+}
+
+.m-5 {
+  margin: 5rem;
 }
 
 .flex-start {

@@ -36,8 +36,9 @@
   }
 
   &-label {
+    color: var(--grey-dark);
     font-size: var(--spacing-04);
     min-height: 1em;
-    font-weight: 400;
+    font-weight: bold;
   }
 }

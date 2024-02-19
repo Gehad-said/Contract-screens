@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Option } from '@dxc-technology/halstack-angular';
+import { Option, ThemeService } from '@dxc-technology/halstack-angular';
+import { customTheme } from 'src/assets/styles/standardTheme';
 
 @Component({
   selector: 'app-treaty-slip',
@@ -20,7 +21,7 @@ export class TreatySlipComponent implements OnInit {
     { label: '2023', value: 'Underwriting 2' },
     { label: '2022', value: 'Underwriting 3' },
   ];
-  constructor() { }
+  constructor(@Inject('ThemeService') private themeService: ThemeService){ }
 
   submit() {
     console.log();
@@ -28,6 +29,7 @@ export class TreatySlipComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.themeService.registerTheme(customTheme);
   }
 
 }
