@@ -1,0 +1,26 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 16px);
+  }
+  
+  .app {
+    &__wrapper {
+      position: relative;
+      display: block;
+    }
+  
+    &__container {
+      display: flex;
+    }
+    &__main {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+  
+  .app-footer{
+    height: 170px;
+    width: 100%;
+  }
+  

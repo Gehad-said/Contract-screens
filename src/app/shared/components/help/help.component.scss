@@ -1,0 +1,72 @@
+.modalContainer {
+  &__modalTitle {
+    font-size: var(--type-scale-06);
+    margin-bottom: var(--spacing-06);
+  }
+  &__modalContent {
+    font-size: var(--type-scale-03);
+    font-weight: 600;
+    max-width: fit-content;
+  }
+
+  &__btnsHolder {
+    text-align: center;
+  }
+
+  &__btnsHolder--actionBtns button {
+    background: var(--white) !important;
+  }
+  &:active {
+    background: var(--primary-dark);
+  }
+}
+
+.modalContainer_mailto {
+  color: var(--black);
+}
+
+.dialogContainer {
+  max-width: 300px !important;
+}
+
+.modalContainer__btnsHolder--actionBtns-1st {
+  width: 11rem;
+  padding: var(--spacing-03) var(--spacing-05) var(--spacing-03) var(--spacing-05);
+  border: 2px solid var(--primary-dark);
+  border-radius: 4px;
+  background: var(--primary-dark);
+  color: var(--white);
+  font-size: var(--type-scale-03);
+  margin: var(--spacing-04);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.modalContainer__btnsHolder--actionBtns-2nd {
+  width: 11rem;
+  padding: var(--spacing-03) var(--spacing-05) var(--spacing-03) var(--spacing-05);
+  border: 2px solid var(--primary-dark);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--black);
+  font-size: var(--type-scale-03);
+  margin: var(--spacing-04);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+  .modalContainer__btnsHolder--actionBtns-2nd,
+  .modalContainer__btnsHolder--actionBtns-1st {
+    width: 9rem;
+    margin: var(--spacing-01);
+  }
+  .modalContainer__modalContent {
+    margin-bottom: var(--spacing-03);
+  }
+}
+
+.modalContainer_mailto--Btn {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,130 @@
+<div theme>
+    <div class="body-margin">
+      <h1>Add Treaty Slip</h1>
+      <div class="tab_header">
+        <h2 style="color: #3e7ecc;">User details</h2>
+        
+        <div class="d-flex">
+          <div>
+          <h5 class="margin-spacing-5">User ID</h5>
+          <h5 class="margin-spacing-5">1234567890</h5>
+
+          </div>
+          <div>
+            <h5 class="margin-spacing-5">Date & Time</h5>
+          <h5 class="margin-spacing-5">10 February 2024 16:00</h5>
+          </div>
+          
+
+        </div>
+        <h2 style="color: #3e7ecc;">Slip details</h2>
+
+        <form [formGroup]="formData" (ngSubmit)="submit()">
+         <div class="d-flex">
+          <dxc-text-input
+          id="uniqueMarketRef"
+          label="Unique Market Reference"
+          formControlName="uniqueMarketRef"
+          ngDefaultControl
+        >
+        </dxc-text-input>
+
+        <dxc-text-input
+          id="treatyNumber"
+          label="Treaty Number"
+          formControlName="treatyNumber"
+          ngDefaultControl
+        >
+        </dxc-text-input>
+         </div>
+
+         <label for="">Presentation Date</label>
+         <app-date-input></app-date-input>
+
+
+          <div class="d-flex">
+            <dxc-text-input
+            id="brokerCode"
+            label="Broker Code"
+            formControlName="brokerCode"
+            ngDefaultControl
+          >
+          </dxc-text-input>
+  
+          <dxc-text-input
+            id="brokerContactName"
+            label="Broker Contact Name"
+            formControlName="brokerContactName"
+            ngDefaultControl
+          >
+          </dxc-text-input>
+           </div>
+
+           <div class="d-flex">
+            <dxc-text-input
+            id="pseudonym"
+            label="Pseudonym"
+            formControlName="pseudonym"
+            ngDefaultControl
+          >
+          </dxc-text-input>
+  
+          <dxc-text-input
+            id="brokerContactNumber"
+            label="Broker Contact Number"
+            formControlName="brokerContactNumber"
+            ngDefaultControl
+          >
+          </dxc-text-input>
+           </div>
+
+
+           <div class="d-flex">
+            <div>
+              <label for="">Contract Start Date</label>
+              <app-date-input></app-date-input>
+            </div>
+            <div class="margin-spacing-8">
+              <label for="">Contract End Date</label>
+              <app-date-input></app-date-input>
+            </div>
+
+           </div>
+
+
+           <div class="d-flex">
+            <dxc-text-input
+            id="uniqueMarketRef"
+            label="Next Period Narrative"
+            formControlName="uniqueMarketRef"
+            ngDefaultControl
+          >
+          </dxc-text-input>
+          
+          <dxc-select
+          label="Underwriting Year"
+          [options]="array1"
+          placeholder="Select"
+          size="large"
+          tabIndex="3"
+        >
+        </dxc-select>
+           </div>
+
+
+          <dxc-textarea
+            label="Checkers Notepad"
+            margin="medium"
+            size = 'large'
+          >
+          </dxc-textarea>
+
+          <dxc-button
+            mode="secondary"
+            label="Add Section"
+            style="margin-top: 40px;">
+          </dxc-button>
+        </form>
+      </div>
+    </div>
+</div>

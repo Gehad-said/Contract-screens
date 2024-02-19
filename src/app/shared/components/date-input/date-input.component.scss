@@ -1,0 +1,43 @@
+.date-label {
+  margin-bottom: 0 !important;
+}
+
+.label-description {
+  margin-top: var(--spacing-03) !important;
+}
+
+.date-input {
+  flex-wrap: nowrap;
+
+  &-day dxc-text-input {
+    max-width: 85px;
+  }
+
+  .label-description {
+    margin-top: var(--spacing-03) !important;
+  }
+
+  .date-input {
+    flex-wrap: nowrap;
+
+    &-month {
+      margin: 0 var(--type-scale-01);
+
+      @media (max-width: 600px) {
+        dxc-select {
+          max-width: 100px !important;
+        }
+      }
+    }
+  }
+
+  &-year dxc-text-input {
+    max-width: 80px;
+  }
+
+  &-label {
+    font-size: var(--spacing-04);
+    min-height: 1em;
+    font-weight: 400;
+  }
+}

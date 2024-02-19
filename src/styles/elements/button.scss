@@ -1,0 +1,110 @@
+.lm-button {
+  background: var(--success-main);
+  border: 2px solid var(--success-dark);
+  color: var(--white);
+
+  &:hover {
+    background: var(--success-light);
+    border: 2px solid var(--success-main);
+  }
+}
+
+//primary
+dxc-button .mat-button-base:hover {
+  background-color: var(--Hal-Blue-L-45) !important;
+}
+
+dxc-button .mat-button-base:focus {
+  background-color: var(--Hal-Blue-S-35) !important;
+  border-color: var(--Hal-Blue-L-45) !important;
+  box-shadow: var(--Hal-Blue-L-45) 0px 0px 0px 2px !important;
+}
+
+dxc-button button span.mat-button-wrapper > span {
+  z-index: unset !important;
+}
+//secondary
+.secondary-button button {
+  background-color: transparent !important;
+
+  &:hover {
+    background-color: var(--Hal-Blue-L-95) !important;
+  }
+  &:focus {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    > span.mat-button-ripple {
+      border: 2px solid var(--Hal-Blue-L-45) !important;
+    }
+  }
+}
+.secondary-button button span.mat-button-ripple {
+  border: 2px solid var(--Hal-Blue-S-35) !important;
+}
+.secondary-button button span.mat-button-wrapper {
+  color: var(--Hal-Black) !important;
+}
+
+.search-button {
+  button {
+    width: 100% !important;
+  }
+}
+
+.primary-button button,
+.secondary-button button {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.search-button button span.mat-button-wrapper > span,
+.primary-button button span.mat-button-wrapper > span,
+.secondary-button button span.mat-button-wrapper > span {
+  font-weight: bold !important;
+}
+
+@media only screen and (max-width: 1280px) {
+  .large-btn button {
+    min-width: 12rem !important;
+    height: auto !important;
+  }
+}
+.payment-means {
+  margin-bottom: var(--type-scale-01);
+  &-button-active button,
+  &-button-active button:hover,
+  &-button-active button:focus {
+    background-color: var(--Hal-Blue-S-35) !important;
+    span.mat-button-wrapper > span {
+      color: var(--Hal-White) !important;
+    }
+  }
+
+  &-button:first-of-type button {
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+  }
+  &-button:nth-of-type(2) button {
+    padding-right: 70px !important;
+    padding-left: 70px !important;
+  }
+  &-button button span.mat-button-wrapper > span {
+    font-size: 0.9rem !important;
+  }
+  @media (max-width: 600px) {
+    &-button:nth-of-type(2) button {
+      padding-right: 75px !important;
+      padding-left: 75px !important;
+    }
+  }
+}
+
+#searchButton {
+  button .mat-button-wrapper span {
+    font-weight: bold !important;
+  }
+  button:disabled {
+    background: var(--Hal-Grey-L-75) !important;
+    color: var(--Hal-White) !important;
+  }
+}

@@ -1,0 +1,21 @@
+<div class="modalContainer">
+  <dxc-dialog (onCloseClick)="openDialog()" *ngIf="toggle" padding="xlarge" (onBackgroundClick)="openDialog()">
+    <div class="modalContainer__modalTitle">
+      {{ helpModel.title }}
+    </div>
+
+    <div class="modalContainer__modalContent">
+      {{ helpModel.content }}
+      <a class="modalContainer_mailto" href="mailto: IPOShelp@dxc.com" [translate]="'HELP.HELP_EMAIL'"></a>
+    </div>
+
+    <div class="modalContainer__btnsHolder">
+      <button class="modalContainer__btnsHolder--actionBtns-1st">
+        <a class="modalContainer_mailto--Btn" href="mailto: IPOShelp@dxc.com">{{ helpModel.firstBtn }}</a>
+      </button>
+      <button class="modalContainer__btnsHolder--actionBtns-2nd" (click)="openDialog()">
+        {{ helpModel.secondBtn }}
+      </button>
+    </div>
+  </dxc-dialog>
+</div>

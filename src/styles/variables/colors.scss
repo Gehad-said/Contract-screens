@@ -1,0 +1,81 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --grey-lighter: hsl(0, 0%, 95%);
+  --grey-light: hsl(0, 0%, 75%);
+  --grey-main: hsl(0, 0%, 60%);
+  --grey-dark: hsl(0, 0%, 40%);
+  --black: hsl(0, 0%, 0%);
+  --primary-dark: hsl(205, 100%, 20%);
+  --secondary-lighter: hsl(280, 53%, 90%);
+  --secondary-light: hsl(280, 53%, 37%);
+  --secondary-main: hsl(280, 53%, 30%);
+  --secondary-dark: hsl(280, 53%, 20%);
+  --error-lighter: hsl(352, 100%, 90%);
+  --error-light: hsl(352, 99%, 41%);
+  --error-main: hsl(352, 99%, 30%);
+  --error-dark: hsl(352, 99%, 20%);
+  --warning-main: hsl(32, 90%, 54%);
+  --warning-lighter: hsl(51, 92%, 85%);
+  --success-lighter: hsl(138, 65%, 90%);
+  --success-light: hsl(137, 63%, 39%);
+  --success-main: hsl(137, 63%, 30%);
+  --success-dark: hsl(137, 63%, 20%);
+
+  --col-value-black: hsl(0,56.1%,8%);
+
+  // colors imported to map css for halstack components
+
+  --primary-lighter: hsl(205, 100%, 35%);
+  --primary-light: hsl(205, 100%, 35%);
+  --primary-main: hsl(205, 100%, 35%);
+
+  --secondary-lighter: hsl(205, 100%, 80%);
+  --secondary-light: hsl(205, 100%, 50%);
+  --secondary-main: hsl(205, 100%, 35%);
+  --secondary-dark: hsl(205, 100%, 20%);
+
+  --Hal-White: hsl(0, 0%, 100%); // #ffffff
+  --Hal-Grey-L-95: hsl(0, 0%, 95%); // #f2f2f2
+  --Hal-Grey-L-93: hsl(0, 0%, 93%); // #eeeeee
+  --Hal-Grey-L-75: hsl(0, 0%, 75%); // #bfbfbf
+  --Hal-Grey-L-60: hsl(0, 0%, 60%); // #999999
+  --Hal-Grey-S-40: hsl(0, 0%, 40%); // #666666
+  --Hal-Grey-S-31: hsl(0, 0%, 31%); //#505050
+  --Hal-Grey-S-50: hsl(0, 0%, 50%); // #808080
+  --Hal-Black: hsl(0, 0%, 0%); // #000000
+  --Hal-Blue-L-95: hsl(205, 100%, 95%); // #e6f4ff
+  --Hal-Blue-L-80: hsl(205, 100%, 80%); // #99d5ff
+  --Hal-Blue-L-45: hsl(205, 100%, 45%); // #0086e6
+  --Hal-Blue-L-50: hsl(205, 100%, 50%); // #0095ff
+  --Hal-Blue-S-35: hsl(205, 100%, 35%); // #0067b3
+  --Hal-Blue-S-30: hsl(205, 100%, 35%); // #0067B3
+  --Hal-Blue-D-20: hsl(205, 100%, 20%); // #003c66
+  --Hal-Red-L-95: hsl(352, 99%, 95%); // #ffe6e9
+  --Hal-Red-L-80: hsl(352, 99%, 80%); // #fe9aa7
+  --Hal-Red-S-41: hsl(352, 99%, 41%); // #d0011b
+  --Hal-Red-S-89: hsl(0, 78%, 89%); // #F9CFCF
+  --Hal-Red-D-30: hsl(352, 99%, 30%); // #980115
+  --Hal-Red-D-20: hsl(352, 99%, 20%); // #65010e
+
+  --dialog-overlayColor: #000000;
+  --dialog-overlayOpacity: 0.7;
+  --dialog-backgroundColor: #ffffff;
+  --dialog-closeIconTopPosition: 20px;
+  --dialog-closeIconRightPosition: 20px;
+
+  --Hal-Green-L-95: hsl(137, 63%, 95%); // #eafaef
+  --Hal-Green-L-80: hsl(137, 63%, 80%); // #acecbe
+  --Hal-Green-S-39: hsl(137, 63%, 39%); // #24a148
+  --Hal-Green-D-30: hsl(137, 63%, 30%); // #1c7d38
+  --Hal-Green-D-20: hsl(137, 63%, 20%); // #135325
+  --Hal-Green-D-86: hsl(89, 62%, 86%); //#DBF1C4
+  --Hal-Green-D-48: hsl(89, 73%, 48%); //#7ed321
+  --Hal-Yellow-L-95: hsl(48, 93%, 95%); // #fef9e6
+  --Hal-Yellow-L-80: hsl(48, 93%, 80%); // #fbe89d
+  --Hal-Yellow-S-57: hsl(32, 89.8%, 53.9%); // #f7cf2b
+  --Hal-Yellow-D-40: hsl(48, 93%, 40%); // #c59f07
+  --Hal-Yellow-D-50: hsl(48, 93%, 50%); // #F6C709
+  --Hal-Yellow-D-30: hsl(48, 93%, 30%); // #947705
+  --Hal-Orange-S-54: hsl(32, 90%, 54%); //#F38F20
+  --Hal-Orange-S-55: hsl(32, 90%, 60%); //#f59f3d
+}

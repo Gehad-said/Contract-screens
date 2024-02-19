@@ -1,0 +1,59 @@
+<div role="navigation" class="global_header">
+  <div class="app__name">
+    <h2>Prop Treaty</h2>
+  </div>
+
+  <div class="section_container">
+    <div class="global_header__section border_right">
+      <div class="search__box">
+        <div class="search__field">
+          <input
+            id="search"
+            type="text"
+            class="search__input"
+            [placeholder]="'GLOBAL_HEADER.SEARCH.PLACEHOLDER'"
+          />
+          <div class="search__icon">
+            <button class="search__icon_content">
+              <app-icon icon="search" size="medium"></app-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="notifications" class="global_header__section desktop-only border_right">
+      <div class="global_header__section__label clickable">
+        <app-icon class="margin-spacing-6" icon="notifications" size="large"></app-icon>
+        <div class="global_header__section__label--container">
+          <span class="global_header__section__label--text">Notifications</span>
+        </div>
+        <app-icon icon="expand-more"></app-icon>
+      </div>
+    </button>
+
+    <button id="help" class="global_header__section desktop-only border_right" (click)="openDialog()">
+      <div class="global_header__section__label clickable">
+        <app-icon class="margin-spacing-6" icon="help_outline" size="large"></app-icon>
+        <div class="global_header__section__label--container">
+          <span class="global_header__section__label--text">Help</span>
+        </div>
+      </div>
+    </button>
+
+    <div class="global_header__section desktop-only">
+      <div class="global_header__section__label clickable">
+        <app-icon class="margin-spacing-6" icon="account_circle" size="large"></app-icon>
+        <div class="global_header__section__label--container">
+          <div class="margin-spacing-3">
+            <span class="global_header__section__label--text" id="username"> {{ fullUserName | titlecase }} </span
+            ><br />
+            <span id="role">{{ userRole | titlecase }}</span>
+          </div>
+        </div>
+        <app-icon icon="expand_more"></app-icon>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-help [toggle]="toggle" [helpModel]="helpModel" (emmitToggle)="changeToggleState($event)"></app-help>

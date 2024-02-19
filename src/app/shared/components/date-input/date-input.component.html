@@ -1,0 +1,79 @@
+<form [formGroup]="dateForm">
+  <div class="date-input d-flex">
+    <div class="date-input-day">
+      <label class="date-input-label">Day</label>
+      <dxc-text-input
+        class="xsmall-input"
+        placeholder="DD"
+        name="Day"
+        id="day"
+        size="small"
+        ngDefaultControl
+        #day
+        [value]="dateForm.controls['day'].value"
+        [required]="
+          (dateForm.controls['month'].value?.length > 0 || dateForm.controls['year'].value?.length > 0) &&
+          (submmited || dateForm.touched)
+        "
+        formControlName="day"
+        (onBlur)="dateForm.controls['day'].markAsTouched()"
+        (onBlur)="pad_with_zeroes(dateForm.controls['day'].value)"
+        (keypress)="limitCharacters($event, dateForm.controls['day'].value, 2)"
+      >
+      </dxc-text-input>
+    </div>
+
+    <div class="date-input-month">
+      <label class="date-input-label">Month</label>
+      <dxc-select
+        class="select-input"
+        name="Month"
+        id="month"
+        size="small"
+        [value]="dateForm.controls['month'].value === '' ? ' ' : dateForm.controls['month'].value"
+        [options]="monthOptions"
+        [searchable]="true"
+        placeholder="Select month"
+        ngDefaultControl
+        #month
+        [required]="
+          (dateForm.controls['day'].value?.length > 0 || dateForm.controls['year'].value?.length > 0) &&
+          (submmited || dateForm.touched)
+        "
+        formControlName="month"
+        (onBlur)="
+          month.isOpened = 
+             dateForm.controls['month'].invalid || dateForm.controls['month'].touched
+              ? true
+              : false
+        "
+        (onBlur)="dateForm.controls['month'].markAsTouched()"
+        (onChange)="setSelectValue(dateForm.controls['month'], $event.value[0])"
+      >
+      </dxc-select>
+    </div>
+
+    <div class="date-input-year">
+      <label class="date-input-label">Year</label>
+      <dxc-text-input
+        class="small-input"
+        placeholder="YYYY"
+        name="Year"
+        id="year"
+        size="small"
+        [value]="dateForm.controls['year'].value"
+        ngDefaultControl
+        #year
+        [required]="
+          (dateForm.controls['day'].value?.length > 0 || dateForm.controls['month'].value?.length > 0) &&
+          (submmited || dateForm.touched)
+        "
+        formControlName="year"
+        (onBlur)="dateForm.controls['year'].markAsTouched()"
+        (keypress)="limitCharacters($event, dateForm.controls['year'].value, 4)"
+        (keyup.tab)="month.isOpened = false"
+      >
+      </dxc-text-input>
+    </div>
+  </div>
+</form>

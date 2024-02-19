@@ -1,0 +1,34 @@
+label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.75em;
+  min-height: 24px;
+  display: inherit;
+}
+
+label,
+.inputLabel {
+  margin-bottom: var(--spacing-03) !important;
+}
+.inline-label,
+.optional,
+.search-label {
+  display: inline-block;
+}
+
+.label-description {
+  margin: 0 !important;
+  position: relative;
+  bottom: 9px;
+  font-size: var(--spacing-04);
+  font-weight: normal;
+}
+
+.helperText {
+  white-space: nowrap !important;
+  position: relative !important;
+  bottom: 8px !important;
+  @media only screen and (max-width: 470px) {
+    white-space: unset !important;
+  }
+}
